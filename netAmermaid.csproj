@@ -34,13 +34,11 @@
 
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="ICSharpCode.Decompiler" Version="8.1.1.7464" />
+    <PackageReference Include="ICSharpCode.Decompiler" Version="9.1.0.7988" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="html\html.njsproj">
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-    </ProjectReference>
+    <ProjectReference Include="html\html.esproj" />
   </ItemGroup>
 
   <!-- appends git commit hash to assembly informational version; from https://stackoverflow.com/a/45248069

@@ -9,7 +9,7 @@ namespace NetAmermaid
     {
         /// <summary>Wraps a <see cref="CSharpDecompiler"/> method configurable via <see cref="decompilerSettings"/>
         /// that can be used to determine whether a member should be hidden.</summary>
-        private bool IsHidden(IEntity entity) => CSharpDecompiler.MemberIsHidden(entity.ParentModule!.PEFile, entity.MetadataToken, decompilerSettings);
+        private bool IsHidden(IEntity entity) => CSharpDecompiler.MemberIsHidden(entity.ParentModule!.MetadataFile, entity.MetadataToken, decompilerSettings);
 
         private IField[] GetFields(ITypeDefinition type, IProperty[] properties)
             // only display fields that are not backing properties of the same name and type
